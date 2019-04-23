@@ -1,18 +1,19 @@
-defmodule Basis do
+defmodule ElixirSchool.Basis do
   @moduledoc false
 
  def sum(x, y) do
    IO.puts x + y
   end
+
   sum = fn (x, y) ->
     IO.puts x + y
   end
    sum.(2, 3)
 
   atom = fn () ->
-    IO. puts true |> is_atom
-    IO. puts :true |> is_boolean
-    IO. puts :true === true
+    IO.puts true |> is_atom
+    IO.puts :true |> is_boolean
+    IO.puts :true === true
 
   end
   atom.()
